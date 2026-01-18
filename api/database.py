@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-database_url="postgresql://postgres:notforget%4002!@localhost:5432/pdmpApp"
+from api.config import database_url
+
 
 engine=create_engine(database_url)
 

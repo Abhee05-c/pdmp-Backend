@@ -1,9 +1,8 @@
 from passlib.context import CryptContext
 from jose import jwt,JWTError
 from datetime import datetime,timedelta,timezone
+from api.config import Secret_key
 
-
-Secret_key="b304029d3868991d14359295e963df3b557110af6258663d90a8fa640db79f27"
 ALGORITHM="HS256"
 Access_Token_Expire_Minutes=30
 
