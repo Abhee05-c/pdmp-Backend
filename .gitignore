@@ -1,0 +1,10 @@
+.venv
+
+hash.py
+
+test_FD004Dup.csv
+
+notebooks/train_FD004_with_RULF.csv
+notebooks/train_FD004.csv
+data/sensorAnalysis_pdmpSTR
+
