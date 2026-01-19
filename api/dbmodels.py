@@ -20,8 +20,8 @@ class Organisation(Base):
 
 class User(Base):
     __tablename__="users"
-    user_id=Column(Integer,primary_key=True)
-    name=Column(String,nullable=False)
+    user_id=Column(Integer,primary_key=True,unique=True)
+    name=Column(String,nullable=False,unique=True)
     org_id=Column(Integer,ForeignKey("organizations.org_id"))
     password_hash=Column(String,nullable=False,unique=True)
     role=Column(String,default="USER")

@@ -67,6 +67,7 @@ def signup(req:SignupRequest,db: Session=Depends(get_db)):
         "org_id":org.org_id,
         "role":user.role,
         "user_name":user.name,
+        "is_org_admin":user.org_admin
     })
 
     return {"access_token": token}
